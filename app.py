@@ -29,11 +29,11 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 #conn = st.connection("gsheets", type=GSheetsConnection)
 #df = conn.read(worksheet="Sheet1")
 
-url = "https://docs.google.com/spreadsheets/d/1iHmbhpqlSssw6WCMCvbe6PeMED5pdgLee4CUqhCi318/edit?usp=sharing"
+#url = "https://docs.google.com/spreadsheets/d/1iHmbhpqlSssw6WCMCvbe6PeMED5pdgLee4CUqhCi318/edit?usp=sharing"
 
 conn = st.connection("gsheets_cloud", type=GSheetsConnection)
 
-df = conn.read(spreadsheet=url, worksheet="Sheet1")
+df = conn.read(worksheet="Sheet1")
 st.dataframe(df)
 
 #Sidebar
