@@ -1,0 +1,9 @@
+pandas
+plotly
+numpy
+matplotlib
+seaborn
+scipy
+openpyxl
+plost
+st-gsheets-connection
