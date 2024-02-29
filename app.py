@@ -31,9 +31,9 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 url = "https://docs.google.com/spreadsheets/d/1iHmbhpqlSssw6WCMCvbe6PeMED5pdgLee4CUqhCi318/edit?usp=sharing"
 
-conn = st.connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets_cloud", type=GSheetsConnection)
 
-df = conn.read(spreadsheet=url, worksheet="569635382")
+df = conn.read(spreadsheet=url, worksheet="Sheet1")
 st.dataframe(df)
 
 #Sidebar
